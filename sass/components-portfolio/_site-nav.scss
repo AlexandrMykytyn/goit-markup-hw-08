@@ -1,0 +1,31 @@
+/* site-nav */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  min-width: 294px;
+}
+
+.site-nav__link {
+  color: var(--main-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: var(--animation);
+  }
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.site-nav {
+  display: inline-flex;
+}

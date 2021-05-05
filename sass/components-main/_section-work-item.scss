@@ -1,0 +1,9 @@
+.item {
+  position: relative;
+  width: 370px;
+  margin-right: 30px;
+}
+
+.item:nth-child(3n) {
+  margin-right: 0;
+}

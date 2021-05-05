@@ -1,0 +1,32 @@
+/* our projects */
+
+.our-projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.project__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  width: 322px;
+  height: 36px;
+}
+
+.project__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  width: 322px;
+  height: 30px;
+  margin-top: 4px;
+}

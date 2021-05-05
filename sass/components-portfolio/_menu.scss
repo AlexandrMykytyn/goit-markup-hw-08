@@ -1,0 +1,17 @@
+.menu__link {
+  position: relative;
+
+  & .link__mail-icons {
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
+    transition: var(--animation);
+  }
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 331px;
+  }
+}

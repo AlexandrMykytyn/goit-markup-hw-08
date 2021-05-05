@@ -1,0 +1,29 @@
+/* logo */
+
+.nav__logo {
+  display: flex;
+  margin-right: 93px;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
+}
+
+.logo {
+  color: #000000;
+
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__item {
+    color: #2196f3;
+  }
+}

@@ -1,0 +1,118 @@
+.footer {
+  background-color: var(--secondary-bg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 252px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 132px;
+  }
+  &__logo,
+  &__nav {
+    color: var(--main-bg-color);
+  }
+
+  &__logo {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__nav {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__mail,
+  &__tel {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-top: 9px;
+
+    transition: var(--animation);
+  }
+
+  &__address {
+    display: block;
+    width: 231px;
+    margin-right: 70px;
+  }
+
+  &__social {
+    display: block;
+    height: 80px;
+  }
+
+  & .social-icons__icon {
+    fill: var(--main-bg-color);
+  }
+
+  &__mail:hover,
+  &__tel:hover {
+    color: var(--accent-color);
+  }
+  &__mail:focus,
+  &__tel:focus {
+    color: var(--accent-color);
+    transition: var(--animation);
+  }
+}
+
+.social-icons__item + .social-icons__item {
+  margin-left: 10px;
+}
+
+.social-icons__icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icons__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  transition: var(--animation);
+
+  .footer &:focus,
+  .footer &:hover {
+    background-color: var(--accent-color);
+  }
+
+  .footer & {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.join {
+  color: var(--main-bg-color);
+
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &__list {
+    display: flex;
+    padding-bottom: 0px;
+  }
+}

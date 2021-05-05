@@ -1,0 +1,58 @@
+.mobile-menu-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.mobile-menu-btn {
+  position: relative;
+  z-index: 105;
+  //   width: 24px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+  //   width: 18.67px;
+  //   height: 18.67px;
+}
+
+.close-burger {
+  display: none;
+}
+
+.is-open {
+  .close-burger {
+    display: block;
+  }
+
+  .menu-burger {
+    display: none;
+  }
+}
+
+.menu-burger {
+  width: 100%;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  //   max-width: 480px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition: right 0.5s;
+
+  &.is-open {
+    right: 0;
+  }
+}
+
+.mob-site-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
