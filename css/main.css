@@ -1332,12 +1332,23 @@ textarea:hover, textarea:focus {
   height: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
 .mobile-menu-btn {
   position: relative;
   z-index: 105;
   height: 16px;
   background-color: transparent;
   border: none;
+}
+
+.mobile-menu-btn:focus,
+.mobile-menu-btn:hover {
+  fill: #2196f3;
 }
 
 .close-burger {
@@ -1377,6 +1388,72 @@ textarea:hover, textarea:focus {
 .mob-site-nav {
   display: flex;
   flex-direction: column;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
+.mob-menu__link:nth-last-child(-n + 2) {
+  margin-top: 32px;
+}
+
+.mob-menu__link:nth-last-child(-n + 2) .site-nav__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-menu__link .link__current {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu__link .link__tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu__link .link__mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-socials__menu {
+  display: flex;
+  padding-top: 64px;
+  padding-left: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-site-nav__link-mail {
+  padding-left: 40px;
+  display: block;
+  padding-top: 306px;
 }
 /*# sourceMappingURL=main.css.map */
