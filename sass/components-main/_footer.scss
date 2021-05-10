@@ -55,6 +55,8 @@
   letter-spacing: 0.03em;
   display: block;
   margin-top: 9px;
+  display: flex;
+  justify-content: end;
 
   transition: var(--animation);
 
@@ -72,14 +74,21 @@
 
 .footer__mail,
 .footer__tel {
+  @media screen and (max-width: 767px) {
+    margin-left: 45px;
+  }
   @media screen and (max-width: 1199px) {
     margin-top: 8px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
   }
 }
 
 .footer__social {
   display: block;
   height: 80px;
+  margin-bottom: 40px;
 }
 
 .join {
@@ -118,6 +127,7 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    margin-left: 120px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 0;
