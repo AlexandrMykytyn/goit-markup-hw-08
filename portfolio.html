@@ -26,7 +26,7 @@
             <li class="menu__link"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="site-nav">
+        <ul class="site-nav__contacts">
           <li class="menu__link">
             <a href="mailto:info@devstudio.com" class="link__mail">
               <svg class="link__mail-icons" width="16" height="12">
@@ -44,8 +44,41 @@
             >
           </li>
         </ul>
+        <button class="mobile-menu-btn" data-menu-button>
+          <svg class="mobile-menu-icon">
+            <use class="menu-burger" href="./images/symbol-defs.svg#icon-menu_burger"></use>
+            <use class="close-burger" href="./images/symbol-defs.svg#icon-close_burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+      <div class="mobile-menu" data-menu>
+        <ul class="mob-site-nav">
+          <li class="mob-menu__link"><a href="" class="link current link__current">Студия</a></li>
+          <li class="mob-menu__link"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+          <li class="mob-menu__link"><a href="" class="site-nav__link">Контакты</a></li>
+        </ul>
+        <ul class="mob-site-nav__link-mail">
+          <li class="mob-menu__link">
+            <a href="tel:+380961111111" class="link__tel">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mob-menu__link">
+            <a href="mailto:info@devstudio.com" class="link__mail">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <div class="mob-socials">
+          <ul class="mob-socials__menu">
+            <li class="instagram">Instagram</li>
+            <li class="twitter">Twitter</li>
+            <li class="facebook">Facebook</li>
+            <li class="linkedIn">LinkedIn</li>
+          </ul>
+        </div>
+      
+      </div>
 
     <!-- main section -->
 
@@ -276,5 +309,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
