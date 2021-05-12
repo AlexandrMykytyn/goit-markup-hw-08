@@ -54,30 +54,27 @@
     </header>
 
     <div class="mobile-menu" data-menu>
-        <ul class="mob-site-nav">
-          <li class="mob-menu__link"><a href="" class="link current link__current">Студия</a></li>
-          <li class="mob-menu__link"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-          <li class="mob-menu__link"><a href="" class="site-nav__link">Контакты</a></li>
+      <ul class="mob-site-nav">
+        <li class="mob-menu__link"><a href="" class="link current link__current">Студия</a></li>
+        <li class="mob-menu__link"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+        <li class="mob-menu__link"><a href="" class="site-nav__link">Контакты</a></li>
+      </ul>
+      <ul class="mob-site-nav__link-mail">
+        <li class="mob-menu__link">
+          <a href="tel:+380961111111" class="link__tel"> +38 096 111 11 11</a>
+        </li>
+        <li class="mob-menu__link">
+          <a href="mailto:info@devstudio.com" class="link__mail"> info@devstudio.com</a>
+        </li>
+      </ul>
+      <div class="mob-socials">
+        <ul class="mob-socials__menu">
+          <li class="instagram">Instagram</li>
+          <li class="twitter">Twitter</li>
+          <li class="facebook">Facebook</li>
+          <li class="linkedIn">LinkedIn</li>
         </ul>
-        <ul class="mob-site-nav__link-mail">
-          <li class="mob-menu__link">
-            <a href="tel:+380961111111" class="link__tel">
-              +38 096 111 11 11</a>
-          </li>
-          <li class="mob-menu__link">
-            <a href="mailto:info@devstudio.com" class="link__mail">
-              info@devstudio.com</a>
-          </li>
-        </ul>
-        <div class="mob-socials">
-          <ul class="mob-socials__menu">
-            <li class="instagram">Instagram</li>
-            <li class="twitter">Twitter</li>
-            <li class="facebook">Facebook</li>
-            <li class="linkedIn">LinkedIn</li>
-          </ul>
-        </div>
-
+      </div>
     </div>
 
     <!--main section-->
@@ -128,19 +125,49 @@
           <h2 class="section__name">Чем мы занимаемся</h2>
           <ul class="section__images">
             <li class="item">
-              <img src="./images/what-are-we-doing/img-1.jpg" width="370" alt="кто-то наберает код" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-2x-figma.img/what-are-we-doing/box1.jpg    1x,
+                    ./images/1x-2x-figma.img/what-are-we-doing/box1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/what-are-we-doing/img-1.jpg" width="370" alt="кто-то наберает код" />
+              </picture>
               <div class="content">
                 <h3 class="content__bottom">Десктопные приложения</h3>
               </div>
             </li>
             <li class="item">
-              <img src="./images/what-are-we-doing/img-2.jpg" width="370" alt="ноутбук и сматфон" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-2x-figma.img/what-are-we-doing/box2.jpg    1x,
+                    ./images/1x-2x-figma.img/what-are-we-doing/box2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/what-are-we-doing/img-2.jpg" width="370" alt="ноутбук и сматфон" />
+              </picture>
               <div class="content">
                 <h3 class="content__bottom">Мобильные приложения</h3>
               </div>
             </li>
             <li class="item">
-              <img src="./images/what-are-we-doing/img-3.jpg" width="370" alt="человек с планшетом в руках" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-2x-figma.img/what-are-we-doing/box3.jpg    1x,
+                    ./images/1x-2x-figma.img/what-are-we-doing/box3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/what-are-we-doing/img-3.jpg" width="370" alt="человек с планшетом в руках" />
+              </picture>
               <div class="content">
                 <h3 class="content__bottom">Дизайнерские решения</h3>
               </div>
@@ -156,7 +183,35 @@
           <h2 class="section__name">Наша команда</h2>
           <ul class="section__images">
             <li class="section__item">
-              <img src="./images/our-team/img-1.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/1x-2x-figma.img/our-team/desktop/i-d-desktop.jpg    1x,
+                    ./images/1x-2x-figma.img/our-team/desktop/i-d-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/1x-2x-figma.img/our-team/tablet/i.d.tablet.jpg    1x,
+                    ./images/1x-2x-figma.img/our-team/tablet/i.d.tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/1x-2x-figma.img/our-team/mobile/i.d.mobile.jpg    1x,
+                    ./images/1x-2x-figma.img/our-team/mobile/i.d.mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img src="./images/our-team/img-1.jpg" alt="Игорь Демьяненко" width="450" />
+              </picture>
               <div class="section__content">
                 <h3 class="section__team">Игорь Демьяненко</h3>
                 <p class="specialty">Product Designer</p>
@@ -193,7 +248,23 @@
               </div>
             </li>
             <li class="section__item">
-              <img src="./images/our-team/img-2.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source srcset="
+                                  ./images/1x-2x-figma.img/our-team/desktop/o.r.desktop.jpg    1x,
+                                  ./images/1x-2x-figma.img/our-team/desktop/o.r.desktop@2x.jpg 2x
+                                " media="(min-width: 1200px)" type="image/jpeg" />
+              
+                <source srcset="
+                                  ./images/1x-2x-figma.img/our-team/tablet/o.r.tablet.jpg    1x,
+                                  ./images/1x-2x-figma.img/our-team/tablet/o.r.tablet@2x.jpg 2x
+                                " media="(min-width: 768px)" type="image/jpeg" />
+                <source srcset="
+                                  ./images/1x-2x-figma.img/our-team/mobile/o.r.mobile.jpg    1x,
+                                  ./images/1x-2x-figma.img/our-team/mobile/o.r.mobile@2x.jpg 2x
+                                " media="(max-width: 767px)" type="image/jpeg" />
+                            <img src="./images/our-team/img-2.jpg" alt="Ольга Репина" width="450" />
+
+              </picture>
               <div class="section__content">
                 <h3 class="section__team">Ольга Репина</h3>
                 <p class="specialty">Frontend Developer</p>
@@ -230,7 +301,23 @@
               </div>
             </li>
             <li class="section__item">
-              <img src="./images/our-team/img-3.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source srcset="
+                                                ./images/1x-2x-figma.img/our-team/desktop/n.t.desktop.jpg    1x,
+                                                ./images/1x-2x-figma.img/our-team/desktop/n.t.desktop@2x.jpg 2x
+                                              " media="(min-width: 1200px)" type="image/jpeg" />
+              
+                <source srcset="
+                                                ./images/1x-2x-figma.img/our-team/tablet/n.t.tablet.jpg    1x,
+                                                ./images/1x-2x-figma.img/our-team/tablet/n.t.tablet@2x.jpg 2x
+                                              " media="(min-width: 768px)" type="image/jpeg" />
+                <source srcset="
+                                                ./images/1x-2x-figma.img/our-team/mobile/n.t.mobile.jpg    1x,
+                                                ./images/1x-2x-figma.img/our-team/mobile/n.t.mobile@2x.jpg 2x
+                                              " media="(max-width: 767px)" type="image/jpeg" />
+                            <img src="./images/our-team/img-3.jpg" alt="Николай Тарасов" width="450" />
+
+              </picture>
               <div class="section__content">
                 <h3 class="section__team">Николай Тарасов</h3>
                 <p class="specialty">Marketing</p>
@@ -267,7 +354,23 @@
               </div>
             </li>
             <li class="section__item">
-              <img src="./images/our-team/img-4.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source srcset="
+                                                              ./images/1x-2x-figma.img/our-team/desktop/m.e.desktop.jpg    1x,
+                                                              ./images/1x-2x-figma.img/our-team/desktop/m.e.desktop@2x.jpg 2x
+                                                            " media="(min-width: 1200px)" type="image/jpeg" />
+              
+                <source srcset="
+                                                              ./images/1x-2x-figma.img/our-team/tablet/m.e.tablet.jpg    1x,
+                                                              ./images/1x-2x-figma.img/our-team/tablet/m.e.tablet@2x.jpg 2x
+                                                            " media="(min-width: 768px)" type="image/jpeg" />
+                <source srcset="
+                                                              ./images/1x-2x-figma.img/our-team/mobile/m.e.mobile.jpg    1x,
+                                                              ./images/1x-2x-figma.img/our-team/mobile/m.e.mobile@2x.jpg 2x
+                                                            " media="(max-width: 767px)" type="image/jpeg" />
+                            <img src="./images/our-team/img-4.jpg" alt="Михаил Ермаков" width="450" />
+
+              </picture>
               <div class="section__content">
                 <h3 class="section__team">Михаил Ермаков</h3>
                 <p class="specialty">UI Designer</p>

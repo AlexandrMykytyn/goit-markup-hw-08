@@ -528,7 +528,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2f303a;
-  background-position: left, top;
+  background-position: right, top;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -541,12 +541,38 @@ a {
 @media screen and (max-width: 767px) {
   .hero {
     padding: 118px 0px;
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../images/1x-2x-figma.img/hero/hero.mobile.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratoi: 2), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../images/1x-2x-figma.img/hero/hero.mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     padding: 118px 0px;
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../images/1x-2x-figma.img/hero/hero.tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratoi: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../images/1x-2x-figma.img/hero/hero.tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../images/1x-2x-figma.img/hero/hero.desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratoi: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%), url(../images/1x-2x-figma.img/hero/hero.desktop@2x.jpg);
   }
 }
 
@@ -908,7 +934,6 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 30px * 1) / 1);
-  background: tomato;
 }
 
 @media screen and (max-width: 767px) {

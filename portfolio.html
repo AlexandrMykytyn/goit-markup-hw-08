@@ -53,32 +53,29 @@
       </div>
     </header>
 
-      <div class="mobile-menu" data-menu>
-        <ul class="mob-site-nav">
-          <li class="mob-menu__link"><a href="" class="link current link__current">Студия</a></li>
-          <li class="mob-menu__link"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-          <li class="mob-menu__link"><a href="" class="site-nav__link">Контакты</a></li>
+    <div class="mobile-menu" data-menu>
+      <ul class="mob-site-nav">
+        <li class="mob-menu__link"><a href="" class="link current link__current">Студия</a></li>
+        <li class="mob-menu__link"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+        <li class="mob-menu__link"><a href="" class="site-nav__link">Контакты</a></li>
+      </ul>
+      <ul class="mob-site-nav__link-mail">
+        <li class="mob-menu__link">
+          <a href="tel:+380961111111" class="link__tel"> +38 096 111 11 11</a>
+        </li>
+        <li class="mob-menu__link">
+          <a href="mailto:info@devstudio.com" class="link__mail"> info@devstudio.com</a>
+        </li>
+      </ul>
+      <div class="mob-socials">
+        <ul class="mob-socials__menu">
+          <li class="instagram">Instagram</li>
+          <li class="twitter">Twitter</li>
+          <li class="facebook">Facebook</li>
+          <li class="linkedIn">LinkedIn</li>
         </ul>
-        <ul class="mob-site-nav__link-mail">
-          <li class="mob-menu__link">
-            <a href="tel:+380961111111" class="link__tel">
-              +38 096 111 11 11</a>
-          </li>
-          <li class="mob-menu__link">
-            <a href="mailto:info@devstudio.com" class="link__mail">
-              info@devstudio.com</a>
-          </li>
-        </ul>
-        <div class="mob-socials">
-          <ul class="mob-socials__menu">
-            <li class="instagram">Instagram</li>
-            <li class="twitter">Twitter</li>
-            <li class="facebook">Facebook</li>
-            <li class="linkedIn">LinkedIn</li>
-          </ul>
-        </div>
-      
       </div>
+    </div>
 
     <!-- main section -->
 
@@ -103,7 +100,34 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-1.jpg" width="370" alt="ссылка на сайт Технокряк" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink1desktop.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink1desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink1tablet.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink1tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink1mobile.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink1mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/our-projects/img-1.jpg" width="450" alt="ссылка на сайт Технокряк" />
+                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Технокряк</h2>
@@ -118,7 +142,34 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-2.jpg" width="370" alt="постер на баскетбольный матч" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink2desktop.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink2desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink2tablet.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink2tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink2mobile.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink2mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/our-projects/img-2.jpg" width="450" alt="постер на баскетбольный матч" />
+                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
@@ -133,7 +184,34 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-3.jpg" width="370" alt="приложение ресторан 'Seafood'" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink3desktop.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink3desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink3tablet.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink3tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink3mobile.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink3mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/our-projects/img-3.jpg" width="450" alt="приложение ресторан 'Seafood'" />
+                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Ресторан Seafood</h2>
@@ -148,7 +226,34 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-4.jpg" width="370" alt="проект Prime" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink4desktop.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink4desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink4tablet.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink4tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink4mobile.jpg    1x,
+                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink4mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/our-projects/img-4.jpg" width="450" alt="проект Prime" />
+                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Проект Prime</h2>
@@ -163,7 +268,23 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-5.jpg" width="370" alt="приложение проект Boxes" />
+                                <picture>
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink5desktop.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink5desktop@2x.jpg 2x
+                                                    " media="(min-width: 1200px)" type="image/jpeg" />
+                                
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink5tablet.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink5tablet@2x.jpg 2x
+                                                    " media="(min-width: 768px)" type="image/jpeg" />
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink5mobile.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink5mobile@2x.jpg 2x
+                                                    " media="(max-width: 767px)" type="image/jpeg" />
+                                                                    <img src="./images/our-projects/img-5.jpg" width="450" alt="приложение проект Boxes" />
+
+                                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Проект Boxes</h2>
@@ -178,11 +299,23 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img
-                  src="./images/our-projects/img-6.jpg"
-                  width="370"
-                  alt="ссылка на сайт Inspiration has no Borders"
-                />
+                                <picture>
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink6desktop.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink6desktop@2x.jpg 2x
+                                                    " media="(min-width: 1200px)" type="image/jpeg" />
+                                
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink6tablet.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink6tablet@2x.jpg 2x
+                                                    " media="(min-width: 768px)" type="image/jpeg" />
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink6mobile.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink6mobile@2x.jpg 2x
+                                                    " media="(max-width: 767px)" type="image/jpeg" />
+<img src="./images/our-projects/img-6.jpg" width="450" alt="ссылка на сайт Inspiration has no Borders" />
+                                </picture>
+               
               </div>
               <div class="card__content">
                 <h2 class="project__title">Inspiration has no Borders</h2>
@@ -197,7 +330,23 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-7.jpg" width="370" alt="издание Limited Edition" />
+                                <picture>
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink7desktop.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink7desktop@2x.jpg 2x
+                                                    " media="(min-width: 1200px)" type="image/jpeg" />
+                                
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink7tablet.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink7tablet@2x.jpg 2x
+                                                    " media="(min-width: 768px)" type="image/jpeg" />
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink7mobile.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink7mobile@2x.jpg 2x
+                                                    " media="(max-width: 767px)" type="image/jpeg" />
+                <img src="./images/our-projects/img-7.jpg" width="450" alt="издание Limited Edition" />
+
+                                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Издание Limited Edition</h2>
@@ -212,7 +361,23 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-8.jpg" width="370" alt="проект LAB" />
+                                <picture>
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink8desktop.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink8desktop@2x.jpg 2x
+                                                    " media="(min-width: 1200px)" type="image/jpeg" />
+                                
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink8tablet.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink8tablet@2x.jpg 2x
+                                                    " media="(min-width: 768px)" type="image/jpeg" />
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink8mobile.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink8mobile@2x.jpg 2x
+                                                    " media="(max-width: 767px)" type="image/jpeg" />
+                                                                    <img src="./images/our-projects/img-8.jpg" width="450" alt="проект LAB" />
+
+                                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Проект LAB</h2>
@@ -227,7 +392,23 @@
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <img src="./images/our-projects/img-9.jpg" width="370" alt="приложение Growing Business" />
+                                <picture>
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink9desktop.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/desktop/portfoliolink9desktop@2x.jpg 2x
+                                                    " media="(min-width: 1200px)" type="image/jpeg" />
+                                
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink9tablet.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/tablet/portfoliolink9tablet@2x.jpg 2x
+                                                    " media="(min-width: 768px)" type="image/jpeg" />
+                                  <source srcset="
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink9mobile.jpg    1x,
+                                                      ./images/1x-2x-figma.img/portfolio/mobile/portfoliolink9mobile@2x.jpg 2x
+                                                    " media="(max-width: 767px)" type="image/jpeg" />
+                                                                    <img src="./images/our-projects/img-9.jpg" width="450" alt="приложение Growing Business" />
+
+                                </picture>
               </div>
               <div class="card__content">
                 <h2 class="project__title">Growing Business</h2>
